@@ -1,0 +1,218 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact | QUREIT Pest Control" currentPath="/contact">
+  <section class="relative h-[400px] flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1553775282-20af80779df7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMHNlcnZpY2UlMjBzdXBwb3J0fGVufDF8fHx8MTc3MzgwNDM3NXww&ixlib=rb-4.1.0&q=80&w=1080"
+        alt="Contact Us"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-[#1E3A5F]/80"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-white">
+      <h1 class="text-5xl font-bold mb-4">Contact Us</h1>
+      <p class="text-xl">We're Here to Help - Get in Touch Today</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+          <p class="text-gray-600 mb-8">
+            Have a pest problem? Need a quote? Our friendly team is ready to assist you.
+            Contact us today for a free consultation and inspection.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#FF6B35] rounded-lg flex items-center justify-center">
+                <span class="text-white text-2xl">📞</span>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Phone</h3>
+                <p class="text-gray-600">+63 912 345 6789</p>
+                <p class="text-gray-600">+63 917 234 5678</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#FF6B35] rounded-lg flex items-center justify-center">
+                <span class="text-white text-2xl">✉️</span>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Email</h3>
+                <p class="text-gray-600">info@qureitpestcontrol.com</p>
+                <p class="text-gray-600">support@qureitpestcontrol.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#FF6B35] rounded-lg flex items-center justify-center">
+                <span class="text-white text-2xl">📍</span>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Office Address</h3>
+                <p class="text-gray-600">
+                  123 Pest Control Avenue<br />
+                  Glenns, Metro Manila<br />
+                  Philippines 1234
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#FF6B35] rounded-lg flex items-center justify-center">
+                <span class="text-white text-2xl">⏰</span>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Business Hours</h3>
+                <p class="text-gray-600">
+                  Monday - Friday: 8:00 AM - 6:00 PM<br />
+                  Saturday: 9:00 AM - 4:00 PM<br />
+                  Sunday: Closed<br />
+                  <span class="text-[#FF6B35] font-semibold">Emergency Service: 24/7</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-gray-200">
+            <h3 class="font-bold mb-4">Follow Us</h3>
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-100 hover:bg-[#FF6B35] hover:text-white rounded-full flex items-center justify-center transition-colors"
+              >
+                <span class="font-bold">f</span>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-100 hover:bg-[#FF6B35] hover:text-white rounded-full flex items-center justify-center transition-colors"
+              >
+                <span class="font-bold">in</span>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-100 hover:bg-[#FF6B35] hover:text-white rounded-full flex items-center justify-center transition-colors"
+              >
+                <span class="font-bold">ig</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h2 class="text-2xl font-bold mb-6">Request Free Survey</h2>
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-semibold mb-2">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#FF6B35]"
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-2">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#FF6B35]"
+                placeholder="john@example.com"
+              />
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold mb-2">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#FF6B35]"
+                placeholder="+63 912 345 6789"
+              />
+            </div>
+
+            <div>
+              <label for="service" class="block text-sm font-semibold mb-2">Service Needed *</label>
+              <select
+                id="service"
+                name="service"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#FF6B35]"
+              >
+                <option value="">Select a service</option>
+                <option value="chemical-proofness">Chemical Proofness</option>
+                <option value="integrated-pest-management">Integrated Pest Management</option>
+                <option value="ipm-consultancy">IPM Consultancy</option>
+                <option value="professional-treatment">Professional Treatment</option>
+                <option value="not-sure">Not Sure</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:border-[#FF6B35]"
+                placeholder="Tell us about your pest problem..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-[#FF6B35] hover:bg-[#e55a2a] text-white px-6 py-4 rounded-md text-lg font-semibold transition-colors"
+            >
+              Submit Request
+            </button>
+
+            <p class="text-xs text-gray-500 text-center">
+              By submitting this form, you agree to our privacy policy and terms of service.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-[#FF6B35] text-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-4">Have a Pest Emergency?</h2>
+      <p class="text-lg mb-6">
+        We offer 24/7 emergency pest control services. Call us now for immediate assistance.
+      </p>
+      <a
+        href="tel:+639123456789"
+        class="inline-block bg-white text-[#FF6B35] hover:bg-gray-100 px-8 py-3 rounded-md font-bold transition-colors"
+      >
+        Call Emergency Line: +63 912 345 6789
+      </a>
+    </div>
+  </section>
+
+  <script type="module">
+    const form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Thank you for your inquiry! We will contact you soon.');
+        form.reset();
+      });
+    }
+  </script>
+</BaseLayout>

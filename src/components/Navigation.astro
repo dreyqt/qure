@@ -1,0 +1,35 @@
+---
+const { currentPath = '/' } = Astro.props;
+
+const navItems = [
+  { href: '/about', label: 'ABOUT US' },
+  { href: '/services', label: 'SERVICES' },
+  { href: '/portfolio', label: 'PORTFOLIO' },
+  { href: '/contact', label: 'CONTACT US' }
+];
+
+const isActive = (href: string) => {
+  if (href === '/') {
+    return currentPath === '/';
+  }
+  return currentPath.startsWith(href);
+};
+---
+
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="/" class="flex items-center gap-2">
+      <div class="flex items-center">
+        <span class="text-[#FF6B35] text-2xl font-bold">QURE</span>
+        <span class="text-[#1E3A5F] text-2xl font-bold">IT</span>
+      </div>
+      <span class="ml-2 text-xs text-gray-600 tracking-wide">INCORPORATED</span>
+    </a>
+
+    <button
+      id="nav-toggle"
+      type="button"
+      aria-label="Toggle navigation"
+      class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]"
+    >
+      <svg class="h-6 
