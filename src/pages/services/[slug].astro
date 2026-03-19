@@ -15,7 +15,15 @@ if (!service) {
 }
 ---
 
-<BaseLayout title={`${service.title} | QUREIT Pest Control`} currentPath="/services">
+<BaseLayout
+  title={`${service.title} | QUREIT Pest Control`}
+  currentPath={`/services/${service.slug}`}
+  breadcrumbs={[
+    { href: '/', label: 'Home' },
+    { href: '/services', label: 'Services' },
+    { label: service.title },
+  ]}
+>
   <section class="relative h-[420px] flex items-center">
     <div class="absolute inset-0 z-0">
       <img

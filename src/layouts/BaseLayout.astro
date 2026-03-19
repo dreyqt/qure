@@ -1,9 +1,14 @@
 ---
 import '../styles/index.css';
 import Navigation from '../components/Navigation.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Footer from '../components/Footer.astro';
 
-const { title = 'QUREIT Pest Control', currentPath = '/' } = Astro.props;
+const {
+  title = 'QUREIT Pest Control',
+  currentPath = '/',
+  breadcrumbs = [],
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -15,6 +20,7 @@ const { title = 'QUREIT Pest Control', currentPath = '/' } = Astro.props;
   </head>
   <body class="min-h-screen bg-white text-slate-900">
     <Navigation currentPath={currentPath} />
+    <Breadcrumbs crumbs={breadcrumbs} />
     <main class="min-h-screen">
       <slot />
     </main>

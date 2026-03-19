@@ -2,7 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Contact | QUREIT Pest Control" currentPath="/contact">
+<BaseLayout
+  title="Contact | QUREIT Pest Control"
+  currentPath="/contact"
+  breadcrumbs={[{ href: '/', label: 'Home' }, { label: 'Contact' }]}
+>
   <section class="relative h-[400px] flex items-center">
     <div class="absolute inset-0 z-0">
       <img

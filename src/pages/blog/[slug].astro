@@ -15,7 +15,15 @@ if (!post) {
 }
 ---
 
-<BaseLayout title={`${post.title} | QUREIT Pest Control`} currentPath="/blog">
+<BaseLayout
+  title={`${post.title} | QUREIT Pest Control`}
+  currentPath={`/blog/${post.slug}`}
+  breadcrumbs={[
+    { href: '/', label: 'Home' },
+    { href: '/blog', label: 'Blog' },
+    { label: post.title },
+  ]}
+>
   <section class="relative h-[420px] flex items-center">
     <div class="absolute inset-0 z-0">
       <img

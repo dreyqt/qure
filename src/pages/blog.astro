@@ -3,7 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { blogPosts } from '../app/data/blog';
 ---
 
-<BaseLayout title="Blog | QUREIT Pest Control" currentPath="/blog">
+<BaseLayout
+  title="Blog | QUREIT Pest Control"
+  currentPath="/blog"
+  breadcrumbs={[{ href: '/', label: 'Home' }, { label: 'Blog' }]}
+>
   <section class="relative h-[400px] flex items-center">
     <div class="absolute inset-0 z-0 bg-gradient-to-r from-[#1E3A5F] to-[#2d5a8f]"></div>
     <div class="relative z-10 max-w-6xl mx-auto px-6 text-white">

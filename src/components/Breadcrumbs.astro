@@ -1,0 +1,36 @@
+---
+const { crumbs = [] } = Astro.props;
+---
+
+{crumbs.length ? (
+  <nav aria-label="Breadcrumb" class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <ol class="flex flex-wrap items-center text-sm text-gray-600">
+        {crumbs.map((crumb, index) => (
+          <li class="flex items-center gap-2">
+            {index > 0 ? (
+              <span aria-hidden="true" class="text-gray-400">
+                /
+              </span>
+            ) : null}
+            {crumb.href ? (
+              <a
+                href={crumb.href}
+                class="hover:text-[#FF6B35] transition-colors"
+              >
+                {crumb.label}
+              </a>
+            ) : (
+              <span
+                class="text-gray-900 font-semibold"
+                aria-current="page"
+              >
+                {crumb.label}
+              </span>
+            )}
+          </li>
+        ))}
+      </ol>
+    </div>
+  </nav>
+) : null}
