@@ -73,7 +73,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <Breadcrumbs crumbs={[{ href: '/2a', label: 'Home' }, { label: 'Pestfolio' }]} />
+      <Breadcrumbs crumbs={[{ href: '/', label: 'Home' }, { label: 'Pestfolio' }]} />
       
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center">
