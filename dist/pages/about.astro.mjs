@@ -1,6 +1,11 @@
-<!DOCTYPE html><html lang="en" class="h-full"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About | QUREIT Pest Control</title><link rel="stylesheet" href="/_astro/about.BAWoIIhv.css"></head> <body class="min-h-screen bg-white text-slate-900"> <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-50"> <a href="/" class="flex items-center gap-2"> <div class="flex items-center"> <span class="text-[#FF6B35] text-2xl font-bold">QURE</span> <span class="text-[#1E3A5F] text-2xl font-bold">IT</span> </div> <span class="text-xs text-gray-600">INCORPORATED</span> </a> <div class="flex gap-8"> <a href="/about" class="text-sm transition-colors text-[#FF6B35] font-semibold"> ABOUT US </a><a href="/services" class="text-sm transition-colors text-gray-700 hover:text-[#FF6B35]"> SERVICES </a><a href="/pestfolio" class="text-sm transition-colors text-gray-700 hover:text-[#FF6B35]"> PESTFOLIO </a><a href="/contact" class="text-sm transition-colors text-gray-700 hover:text-[#FF6B35]"> CONTACT US </a> </div> </nav> <nav aria-label="Breadcrumb" class="bg-white border-b border-gray-100"><div class="max-w-6xl mx-auto px-6 py-4"><ol class="flex flex-wrap items-center text-sm text-gray-600"><li class="flex items-center gap-0"><a href="/" class="hover:text-[#FF6B35] transition-colors">Home</a></li><li class="flex items-center gap-0"><span aria-hidden="true" class="text-gray-400 mx-2">
-/
-</span><span class="text-gray-900 font-semibold" aria-current="page">About</span></li></ol></div></nav> <main class="min-h-screen">  <section class="relative h-[400px] flex items-center"> <div class="absolute inset-0 z-0"> <img src="https://images.unsplash.com/photo-1694702722584-05adc8802e28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDF8fHx8MTc3Mzc4MTE1NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="About QUREIT" class="w-full h-full object-cover"> <div class="absolute inset-0 bg-[#1E3A5F]/80"></div> </div> <div class="relative z-10 max-w-6xl mx-auto px-6 text-white"> <h1 class="text-5xl font-bold mb-4">About QUREIT</h1> <p class="text-xl">15 Years of Excellence in Pest Control</p> </div> </section> <section class="py-16"> <div class="max-w-6xl mx-auto px-6"> <div class="grid md:grid-cols-2 gap-12 items-center"> <div> <h2 class="text-3xl font-bold mb-6">Our Story</h2> <p class="text-gray-600 mb-4">
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_CnrUnqlu.mjs';
+import 'kleur/colors';
+import 'html-escaper';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_D8_AxmLZ.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$About = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "About | QUREIT Pest Control", "currentPath": "/about", "breadcrumbs": [{ href: "/", label: "Home" }, { label: "About" }] }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="relative h-[400px] flex items-center"> <div class="absolute inset-0 z-0"> <img src="https://images.unsplash.com/photo-1694702722584-05adc8802e28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBidWlsZGluZyUyMGV4dGVyaW9yfGVufDF8fHx8MTc3Mzc4MTE1NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="About QUREIT" class="w-full h-full object-cover"> <div class="absolute inset-0 bg-[#1E3A5F]/80"></div> </div> <div class="relative z-10 max-w-6xl mx-auto px-6 text-white"> <h1 class="text-5xl font-bold mb-4">About QUREIT</h1> <p class="text-xl">15 Years of Excellence in Pest Control</p> </div> </section> <section class="py-16"> <div class="max-w-6xl mx-auto px-6"> <div class="grid md:grid-cols-2 gap-12 items-center"> <div> <h2 class="text-3xl font-bold mb-6">Our Story</h2> <p class="text-gray-600 mb-4">
 Since 2011, QUREIT Pest Control LLC has been the trusted name in pest management across the Philippines.
             What started as a small operation has grown into one of the region's most respected pest control companies,
             serving over 1,000 satisfied clients.
@@ -33,28 +38,19 @@ Pest emergencies don't follow a schedule. We're available whenever you need us.
 Every property is unique. We create tailored pest management plans for your specific needs.
 </p> </div> </div> <div class="flex gap-4"> <div class="flex-shrink-0"> <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center"> <span class="text-green-600 text-xl font-bold">✓</span> </div> </div> <div> <h3 class="font-bold text-lg mb-2">Transparent Pricing</h3> <p class="text-gray-600">
 No hidden fees or surprises. We provide clear, upfront pricing for all our services.
-</p> </div> </div> </div> </div> </section>  </main> <footer class="bg-[#2D2D2D] text-white"> <div class="max-w-6xl mx-auto px-6 py-12"> <div class="grid md:grid-cols-4 gap-8"> <div> <a href="/" class="flex items-center gap-2 mb-4"> <div class="flex items-center"> <span class="text-[#FF6B35] text-2xl font-bold">QURE</span> <span class="text-white text-2xl font-bold">IT</span> </div> </a> <p class="text-sm text-gray-400 mb-4">
-We are a highly-accredited, reliable, socially-relevant, and environmentally
-          conscious provider of pest control services that has been protecting
-          our clients from pests for 15 years.
-</p> <a href="/contact" class="inline-block bg-[#FF6B35] hover:bg-[#e55a2a] text-white px-4 py-2 rounded-md text-sm transition-colors">
-Book a Free Survey
-</a> </div> <div> <h3 class="font-bold mb-4 text-[#FF6B35]">SERVICES</h3> <ul class="space-y-2 text-sm"> <li> <a href="/services/structural-protection" class="text-gray-400 hover:text-white transition-colors">
-Structural Protection
-</a> </li> <li> <a href="/services/integrated-pest-management" class="text-gray-400 hover:text-white transition-colors">
-Integrated Pest Management
-</a> </li> <li> <a href="/services/disinfection-services" class="text-gray-400 hover:text-white transition-colors">
-Disinfection Services
-</a> </li> <li> <a href="/services/training-and-seminars" class="text-gray-400 hover:text-white transition-colors">
-Training and Seminars
-</a> </li> <li> <a href="/services/ipm-consultancy" class="text-gray-400 hover:text-white transition-colors">
-IPM Consultancy
-</a> </li> </ul> </div> <div> <h3 class="font-bold mb-4 text-[#FF6B35]">PESTFOLIO</h3> <ul class="space-y-2 text-sm"> <li> <a href="/pestfolio" class="text-gray-400 hover:text-white transition-colors">
-Termites
-</a> </li> <li> <a href="/pestfolio" class="text-gray-400 hover:text-white transition-colors">
-Rodents
-</a> </li> <li> <a href="/pestfolio" class="text-gray-400 hover:text-white transition-colors">
-Crawling Insects
-</a> </li><li> <a href="/pestfolio" class="text-gray-400 hover:text-white transition-colors">
-Flying Insects
-</a> </li> </ul> </div> <div> <h3 class="font-bold mb-4 text-[#FF6B35]">FOLLOW US</h3> <ul class="space-y-2 text-sm"> <li> <a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a> </li> <li> <a href="https://www.facebook.com/qureit" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Facebook</a> </li> <li> <a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a> </li> </ul> </div> </div> <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400"> <p>© 2024 QUREIT INC. All rights reserved.</p> </div> </div> </footer> </body></html>
+</p> </div> </div> </div> </div> </section> ` })}`;
+}, "C:/Users/OJT User/qure/src/pages/about.astro", void 0);
+
+const $$file = "C:/Users/OJT User/qure/src/pages/about.astro";
+const $$url = "/about";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$About,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
