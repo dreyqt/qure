@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { services } from '../../app/data/services';
+import { services } from '../../data/services';
 
 export function getStaticPaths() {
   return services.map((service) => ({
@@ -36,7 +36,7 @@ if (!service) {
 
     <div class="relative z-10 max-w-6xl mx-auto px-6 text-white">
       <h1 class="text-5xl font-bold mb-4">{service.title}</h1>
-      <p class="text-xl max-w-3xl">{service.fullDescription}</p>
+      <p class="text-xl max-w-3xl">{service.fullDescription ?? service.description}</p>
     </div>
   </section>
 
@@ -45,19 +45,27 @@ if (!service) {
       <div class="grid md:grid-cols-2 gap-12">
         <div>
           <h2 class="text-3xl font-bold mb-6">Key Features</h2>
-          <ul class="list-disc pl-5 space-y-2 text-gray-600">
-            {service.features.map((feature) => (
-              <li>{feature}</li>
-            ))}
-          </ul>
+          {service.features?.length ? (
+            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+              {service.features.map((feature) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+          ) : (
+            <p class="text-gray-600">No additional details available.</p>
+          )
         </div>
         <div>
           <h2 class="text-3xl font-bold mb-6">Benefits</h2>
-          <ul class="list-disc pl-5 space-y-2 text-gray-600">
-            {service.benefits.map((benefit) => (
-              <li>{benefit}</li>
-            ))}
-          </ul>
+          {service.benefits?.length ? (
+            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+              {service.benefits.map((benefit) => (
+                <li>{benefit}</li>
+              ))}
+            </ul>
+          ) : (
+            <p class="text-gray-600">No additional benefits listed.</p>
+          )
         </div>
       </div>
 

@@ -1,11 +1,11 @@
 export const services = [
   {
     id: 1,
-    slug: 'chemical-proofness',
-    title: 'Chemical Proofness',
-    description: 'Effective in protecting homes and buildings from damages caused by subterranean termite infestations.',
-    image: 'https://images.unsplash.com/photo-1708596082640-6395c6906752?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY28lMjBmcmllbmRseSUyMGdyZWVuJTIwdHJlYXRtZW50fGVufDF8fHx8MTc3MzgwNDA2OXww&ixlib=rb-4.1.0&q=80&w=1080',
-    fullDescription: 'Our chemical proofness treatment creates a protective barrier around your property, safeguarding it from subterranean termite infestations. Using advanced, eco-friendly formulations, we ensure long-lasting protection while maintaining environmental safety standards.',
+    slug: 'structural-protection',
+    title: 'Structural Protection',
+    description: 'This refers to protecting homes and buildings from damage caused by subterranean termite infestations.',
+    image: 'https://qureit.ph/_astro/services_card_structural.6FOHqM0a_Zm4Suh.webp',
+    fullDescription: 'This refers to the protection of homes and buildings from damage caused by infestation of subterranean termites (“anay”), and wood borers such as drywood termites (“bukbok”) and powder post beetles (“agay-ay”).',
     features: [
       'Pre-construction and post-construction treatments',
       'Long-lasting protection (up to 5 years)',
