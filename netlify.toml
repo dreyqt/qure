@@ -1,0 +1,19 @@
+[build]
+  command = "npx pnpm install && npx pnpm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+  PNPM_VERSION = "8"
+```
+
+---
+
+**Or the simpler approach** — tell Netlify to use pnpm by adding a `.npmrc` file in your project root:
+```
+engine-strict=false
+```
+
+And set the build command in Netlify dashboard to:
+```
+corepack enable && pnpm install && pnpm build
